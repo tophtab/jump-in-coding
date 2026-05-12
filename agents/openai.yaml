@@ -1,6 +1,6 @@
 interface:
   display_name: "Jump in Coding"
-  short_description: "Learn programming concepts while building"
-  default_prompt: "Use $jump-in-coding to help me build this while teaching the relevant programming concepts."
+  short_description: "Explain coding concepts automatically"
+  default_prompt: "Automatically explain relevant programming, technical, and engineering concepts while helping with coding work."
 policy:
   allow_implicit_invocation: true

@@ -1,20 +1,23 @@
 ---
 name: jump-in-coding
-description: Proactively teach programming concepts alongside AI coding work. Use by default for coding, debugging, reviewing, designing, refactoring, running project commands, interpreting errors or logs, choosing implementations, or modifying software when the user is learning through practice. Trigger even when the user does not explicitly ask for explanations, and include concise concept notes about relevant programming knowledge, technical terminology, implementation patterns, architecture concepts, and engineering tradeoffs from the current task.
+description: Automatically add concise programming, technical, and engineering concept explanations while AI generates code, debugs, reviews, refactors, runs commands, interprets errors, chooses implementations, or responds about software work. Trigger implicitly during coding-related tasks even when the user does not explicitly ask to learn.
 ---
 
 # Jump in Coding
 
 ## Overview
 
-Help the user code with AI while gradually learning programming concepts from real project work. Keep the coding task moving, and use each feature, bug, file, and implementation choice as a concrete teaching moment.
+Act as an automatic teaching layer for AI-assisted coding. While generating code, debugging, reviewing, refactoring, running commands, interpreting errors, choosing implementations, or answering software questions, briefly explain the relevant programming concepts, technical terms, and engineering tradeoffs.
+
+The coding task remains primary. Concept explanations should clarify the current work without turning every response into a lesson.
 
 ## Operating Style
 
 - Use the user's language by default. If the user writes Chinese, explain in Chinese unless they ask otherwise.
 - Continue doing the engineering work; do not turn every step into a lesson.
-- Teach concepts that matter for the current decision, bug, file, or feature.
-- Proactively include concept notes during normal coding tasks, even when the user does not explicitly ask for them.
+- Treat this skill as implicitly active during coding-related work, not as a mode the user must request each time.
+- Teach only concepts that matter for the current decision, bug, file, feature, command, or response.
+- Proactively include concise concept notes during normal coding tasks, even when the user does not explicitly ask for them.
 - When running commands, use command output, errors, logs, and test results as chances to explain the underlying development concepts.
 - Prefer project-grounded explanations over abstract textbook definitions.
 - Introduce standard engineering vocabulary, then connect it to the user's current code.
@@ -25,7 +28,7 @@ Help the user code with AI while gradually learning programming concepts from re
 
 When performing a coding task:
 
-1. Briefly restate the user's request in more standard software terms.
+1. Briefly identify the user's request in software terms when helpful.
 2. Identify the likely technical area: frontend, backend, database, API, state management, authentication, testing, deployment, performance, accessibility, security, or developer tooling.
 3. Before or while editing, introduce the key programming concept that determines the approach.
 4. Implement the change using the codebase's existing conventions.
