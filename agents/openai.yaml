@@ -1,6 +1,6 @@
 interface:
   display_name: "Jump in Coding"
   short_description: "Explain coding concepts automatically"
-  default_prompt: "Automatically explain relevant programming, technical, and engineering concepts while helping with coding work."
+  default_prompt: "Explain relevant programming, technical, and engineering concepts that appear while helping with coding work, primarily through automatic invocation and also when explicitly invoked. Adapt explanation depth to the user's apparent technical level."
 policy:
   allow_implicit_invocation: true
